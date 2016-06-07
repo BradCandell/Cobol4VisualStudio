@@ -11,6 +11,7 @@
         Operator,
         Paragraph,
         Picture,
+        Section,
         Variable
     }
 
