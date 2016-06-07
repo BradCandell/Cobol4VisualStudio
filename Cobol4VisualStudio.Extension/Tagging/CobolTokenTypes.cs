@@ -1,5 +1,8 @@
 ﻿namespace Cobol4VisualStudio.Extension {
 
+    /// <summary>
+    /// Cobol Token Tag Types
+    /// </summary>
     public enum CobolTokenTypes {
         Comment,
         Division,

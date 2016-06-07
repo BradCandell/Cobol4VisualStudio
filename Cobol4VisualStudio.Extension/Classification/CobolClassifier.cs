@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
@@ -7,7 +6,9 @@ using Microsoft.VisualStudio.Text.Tagging;
 
 namespace Cobol4VisualStudio.Extension.Classification {
 
-
+    /// <summary>
+    /// Classifier - Cobol
+    /// </summary>
     internal sealed class CobolClassifier : ITagger<ClassificationTag> {
 
         private ITextBuffer Buffer;
@@ -15,6 +16,13 @@ namespace Cobol4VisualStudio.Extension.Classification {
         private IDictionary<CobolTokenTypes, IClassificationType> CobolTypes;
 
 
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="buffer">Text Buffer</param>
+        /// <param name="cobolTagAggregator">Cobol Tag Aggregator</param>
+        /// <param name="typeService">Classification Type Registry Service</param>
         public CobolClassifier(ITextBuffer buffer, ITagAggregator<CobolTokenTag> cobolTagAggregator, IClassificationTypeRegistryService typeService) {
             Buffer = buffer;
             Aggregator = cobolTagAggregator;
