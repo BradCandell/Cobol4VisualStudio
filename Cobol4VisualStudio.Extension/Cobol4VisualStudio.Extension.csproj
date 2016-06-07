@@ -59,11 +59,11 @@
     <Compile Include="Classification\Types\Paragraph.cs" />
     <Compile Include="Classification\Types\Picture.cs" />
     <Compile Include="Classification\Types\Variable.cs" />
-    <Compile Include="CobolTokenTag.cs" />
-    <Compile Include="CobolTokenTagger.cs" />
-    <Compile Include="CobolTokenTaggerProvider.cs" />
+    <Compile Include="Tagging\CobolTokenTag.cs" />
+    <Compile Include="Tagging\CobolTokenTagger.cs" />
+    <Compile Include="Tagging\CobolTokenTaggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CobolTokenTypes.cs" />
+    <Compile Include="Tagging\CobolTokenTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
