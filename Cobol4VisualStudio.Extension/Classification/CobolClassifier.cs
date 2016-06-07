@@ -2,17 +2,49 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.Text;
+using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Tagging;
 
 namespace Cobol4VisualStudio.Extension.Classification {
 
 
     internal sealed class CobolClassifier : ITagger<ClassificationTag> {
-        public event EventHandler<SnapshotSpanEventArgs> TagsChanged;
+
+        private ITextBuffer Buffer;
+        private ITagAggregator<CobolTokenTag> Aggregator;
+        private IDictionary<CobolTokenTypes, IClassificationType> CobolTypes;
+
+
+        public CobolClassifier(ITextBuffer buffer, ITagAggregator<CobolTokenTag> cobolTagAggregator, IClassificationTypeRegistryService typeService) {
+            Buffer = buffer;
+            Aggregator = cobolTagAggregator;
+            CobolTypes = new Dictionary<CobolTokenTypes, IClassificationType>();
+            CobolTypes[CobolTokenTypes.Comment] = typeService.GetClassificationType("cobolComment");
+            CobolTypes[CobolTokenTypes.Division] = typeService.GetClassificationType("cobolDivision");
+            CobolTypes[CobolTokenTypes.Keyword] = typeService.GetClassificationType("cobolKeyword");
+            CobolTypes[CobolTokenTypes.LineNumber] = typeService.GetClassificationType("cobolLineNumber");
+            CobolTypes[CobolTokenTypes.Operator] = typeService.GetClassificationType("cobolOperator");
+            CobolTypes[CobolTokenTypes.Paragraph] = typeService.GetClassificationType("cobolParagraph");
+            CobolTypes[CobolTokenTypes.Picture] = typeService.GetClassificationType("cobolPicture");
+            CobolTypes[CobolTokenTypes.Variable] = typeService.GetClassificationType("cobolVariable");
+        }
+
+
+        public event EventHandler<SnapshotSpanEventArgs> TagsChanged
+        {
+            add { }
+            remove { }
+        }
 
         public IEnumerable<ITagSpan<ClassificationTag>> GetTags(NormalizedSnapshotSpanCollection spans) {
-            throw new NotImplementedException();
+
+            foreach (var span in Aggregator.GetTags(spans)) {
+                var tagSpans = span.Span.GetSpans(spans[0].Snapshot);
+                yield return new TagSpan<ClassificationTag>(tagSpans[0], new ClassificationTag(CobolTypes[span.Tag.TokenType]));
+            }
+
         }
+
     }
 
 

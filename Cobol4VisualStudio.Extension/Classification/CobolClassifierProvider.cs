@@ -35,7 +35,10 @@ namespace Cobol4VisualStudio.Extension.Classification {
         internal IBufferTagAggregatorFactoryService AggregatorFactory = null;
 
         public ITagger<T> CreateTagger<T>(ITextBuffer buffer) where T : ITag {
-            throw new NotImplementedException();
+
+            ITagAggregator<CobolTokenTag> cobolTagAggregator = AggregatorFactory.CreateTagAggregator<CobolTokenTag>(buffer);
+            return new CobolClassifier(buffer, cobolTagAggregator, ClassificationTypeRegistry) as ITagger<T>;
+
         }
 
 

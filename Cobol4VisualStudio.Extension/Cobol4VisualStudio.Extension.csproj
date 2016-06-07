@@ -17,7 +17,7 @@
     <AssemblyName>Cobol4VisualStudio.Extension</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
-    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
     <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
     <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
@@ -59,7 +59,9 @@
     <Compile Include="Classification\Types\Paragraph.cs" />
     <Compile Include="Classification\Types\Picture.cs" />
     <Compile Include="Classification\Types\Variable.cs" />
+    <Compile Include="CobolTokenTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CobolTokenTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
