@@ -41,14 +41,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classification\CobolClassifier.cs" />
+    <Compile Include="Classification\CobolClassifierProvider.cs" />
     <Compile Include="Classification\Formats\Comment.cs" />
     <Compile Include="Classification\Formats\Division.cs" />
     <Compile Include="Classification\Formats\Keyword.cs" />
     <Compile Include="Classification\Formats\LineNumber.cs" />
+    <Compile Include="Classification\Formats\Operator.cs" />
+    <Compile Include="Classification\Formats\Paragraph.cs" />
+    <Compile Include="Classification\Formats\Picture.cs" />
+    <Compile Include="Classification\Formats\Variable.cs" />
     <Compile Include="Classification\Types\Comment.cs" />
     <Compile Include="Classification\Types\Division.cs" />
     <Compile Include="Classification\Types\Keyword.cs" />
     <Compile Include="Classification\Types\LineNumber.cs" />
+    <Compile Include="Classification\Types\Operator.cs" />
+    <Compile Include="Classification\Types\Paragraph.cs" />
+    <Compile Include="Classification\Types\Picture.cs" />
+    <Compile Include="Classification\Types\Variable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
