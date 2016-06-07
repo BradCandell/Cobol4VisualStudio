@@ -60,6 +60,8 @@
     <Compile Include="Classification\Types\Picture.cs" />
     <Compile Include="Classification\Types\Variable.cs" />
     <Compile Include="CobolTokenTag.cs" />
+    <Compile Include="CobolTokenTagger.cs" />
+    <Compile Include="CobolTokenTaggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CobolTokenTypes.cs" />
   </ItemGroup>
