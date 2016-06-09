@@ -51,6 +51,7 @@
     <Compile Include="Classification\Formats\Operator.cs" />
     <Compile Include="Classification\Formats\Paragraph.cs" />
     <Compile Include="Classification\Formats\Picture.cs" />
+    <Compile Include="Classification\Formats\String.cs" />
     <Compile Include="Classification\Formats\Variable.cs" />
     <Compile Include="Classification\Types\Comment.cs" />
     <Compile Include="Classification\Types\Section.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Classification\Types\Operator.cs" />
     <Compile Include="Classification\Types\Paragraph.cs" />
     <Compile Include="Classification\Types\Picture.cs" />
+    <Compile Include="Classification\Types\String.cs" />
     <Compile Include="Classification\Types\Variable.cs" />
     <Compile Include="Tagging\CobolTokenTag.cs" />
     <Compile Include="Tagging\CobolTokenTagger.cs" />
@@ -97,6 +99,7 @@
   <ItemGroup>
     <Folder Include="Adornments\" />
     <Folder Include="Intellisense\" />
+    <Folder Include="Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

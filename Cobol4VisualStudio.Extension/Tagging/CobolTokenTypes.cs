@@ -12,6 +12,7 @@
         Paragraph,
         Picture,
         Section,
+        String,
         Variable
     }
 

@@ -5,28 +5,25 @@ using Microsoft.VisualStudio.Utilities;
 
 namespace Cobol4VisualStudio.Extension.Classification {
 
-
     /// <summary>
-    /// Classification Format Definition - Cobol Division
+    /// Classification Format Definition - Cobol String
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolDivision")]
-    [Name("cobolDivision")]
+    [ClassificationType(ClassificationTypeNames = "cobolString")]
+    [Name("cobolString")]
     [UserVisible(true)]
     [Order(Before = Priority.Default)]
-    internal sealed class CobolDivisionFormatDefinition : ClassificationFormatDefinition {
+    internal sealed class CobolStringFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
         /// Default Constructor
         /// </summary>
-        public CobolDivisionFormatDefinition() {
-            DisplayName = "Cobol - Division";
-            ForegroundColor = Colors.Purple;
-            this.IsBold = true;
+        public CobolStringFormatDefinition() {
+            DisplayName = "Cobol - String";
+            ForegroundColor = Color.FromRgb(0x80, 0x0, 0x0);
         }
 
     }
-
 
 
 }

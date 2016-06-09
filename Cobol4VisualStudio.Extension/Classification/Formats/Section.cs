@@ -21,7 +21,8 @@ namespace Cobol4VisualStudio.Extension.Classification {
         /// </summary>
         public CobolSectionFormatDefinition() {
             DisplayName = "Cobol - Section";
-            ForegroundColor = Colors.DarkOliveGreen;
+            ForegroundColor = Color.FromRgb(0xBA, 0x55, 0xD3);
+            IsBold = true;
         }
 
     }

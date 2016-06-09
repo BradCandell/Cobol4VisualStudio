@@ -36,6 +36,7 @@ namespace Cobol4VisualStudio.Extension.Classification {
             CobolTypes[CobolTokenTypes.Picture] = typeService.GetClassificationType("cobolPicture");
             CobolTypes[CobolTokenTypes.Variable] = typeService.GetClassificationType("cobolVariable");
             CobolTypes[CobolTokenTypes.Section] = typeService.GetClassificationType("cobolSection");
+            CobolTypes[CobolTokenTypes.String] = typeService.GetClassificationType("cobolString");
         }
 
 

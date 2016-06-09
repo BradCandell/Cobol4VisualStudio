@@ -1,9 +1,10 @@
 # Roadmap
 
 - [ ] Syntax Highlighting
-- [ ] Intellisense
-- [ ] Collapsing
 - [ ] Adornments (Line Spacing)
+- [ ] Collapsing
+- [ ] Intellisense
+- [ ] Code Structure Tree (with Navigation)
 - [ ] Go to Definition / Symbol Browsing
 - [ ] Debugging (Local & Remote)
 - [ ] Unit Testing
