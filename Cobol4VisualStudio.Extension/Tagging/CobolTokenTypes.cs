@@ -5,9 +5,12 @@
     /// </summary>
     public enum CobolTokenTypes {
         Comment,
+        Constant,
         Division,
+        Identifier,
         Keyword,
         LineNumber,
+        Number,
         Operator,
         Paragraph,
         Picture,

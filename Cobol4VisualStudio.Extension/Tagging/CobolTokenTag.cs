@@ -7,6 +7,10 @@ namespace Cobol4VisualStudio.Extension {
     /// </summary>
     public class CobolTokenTag : ITag {
 
+        public string Division { get; private set; }
+        public string Section { get; private set; }
+        public string Paragraph { get; private set; }
+
         /// <summary>
         /// Get the Type of this Cobol Token
         /// </summary>

@@ -41,9 +41,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Adornments\ColumnGuideAdornment.cs" />
+    <Compile Include="Adornments\ColumnGuideAdornmentProvider.cs" />
     <Compile Include="Classification\CobolClassifier.cs" />
     <Compile Include="Classification\CobolClassifierProvider.cs" />
     <Compile Include="Classification\Formats\Comment.cs" />
+    <Compile Include="Classification\Formats\Constant.cs" />
+    <Compile Include="Classification\Formats\Identifier.cs" />
+    <Compile Include="Classification\Formats\Number.cs" />
     <Compile Include="Classification\Formats\Section.cs" />
     <Compile Include="Classification\Formats\Division.cs" />
     <Compile Include="Classification\Formats\Keyword.cs" />
@@ -54,6 +59,9 @@
     <Compile Include="Classification\Formats\String.cs" />
     <Compile Include="Classification\Formats\Variable.cs" />
     <Compile Include="Classification\Types\Comment.cs" />
+    <Compile Include="Classification\Types\Constant.cs" />
+    <Compile Include="Classification\Types\Identifier.cs" />
+    <Compile Include="Classification\Types\Number.cs" />
     <Compile Include="Classification\Types\Section.cs" />
     <Compile Include="Classification\Types\Division.cs" />
     <Compile Include="Classification\Types\Keyword.cs" />
@@ -97,7 +105,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adornments\" />
     <Folder Include="Intellisense\" />
     <Folder Include="Settings\" />
   </ItemGroup>

@@ -28,15 +28,18 @@ namespace Cobol4VisualStudio.Extension.Classification {
             Aggregator = cobolTagAggregator;
             CobolTypes = new Dictionary<CobolTokenTypes, IClassificationType>();
             CobolTypes[CobolTokenTypes.Comment] = typeService.GetClassificationType("cobolComment");
+            CobolTypes[CobolTokenTypes.Constant] = typeService.GetClassificationType("cobolConstant");
             CobolTypes[CobolTokenTypes.Division] = typeService.GetClassificationType("cobolDivision");
+            CobolTypes[CobolTokenTypes.Identifier] = typeService.GetClassificationType("cobolIdentifier");
             CobolTypes[CobolTokenTypes.Keyword] = typeService.GetClassificationType("cobolKeyword");
             CobolTypes[CobolTokenTypes.LineNumber] = typeService.GetClassificationType("cobolLineNumber");
+            CobolTypes[CobolTokenTypes.Number] = typeService.GetClassificationType("cobolNumber");
             CobolTypes[CobolTokenTypes.Operator] = typeService.GetClassificationType("cobolOperator");
             CobolTypes[CobolTokenTypes.Paragraph] = typeService.GetClassificationType("cobolParagraph");
             CobolTypes[CobolTokenTypes.Picture] = typeService.GetClassificationType("cobolPicture");
-            CobolTypes[CobolTokenTypes.Variable] = typeService.GetClassificationType("cobolVariable");
             CobolTypes[CobolTokenTypes.Section] = typeService.GetClassificationType("cobolSection");
             CobolTypes[CobolTokenTypes.String] = typeService.GetClassificationType("cobolString");
+            CobolTypes[CobolTokenTypes.Variable] = typeService.GetClassificationType("cobolVariable");
         }
 
 
