@@ -8,7 +8,7 @@ namespace Cobol4VisualStudio.Extension.Adornments {
     internal sealed class ColumnGuideAdornment {
 
         [Export]
-        [Name("ColumnGuideAdornment")]
+        [Name("CobolColumnGuideAdornment")]
         [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
         internal AdornmentLayerDefinition columnGuideAdornmentLayerDefinition;
 
