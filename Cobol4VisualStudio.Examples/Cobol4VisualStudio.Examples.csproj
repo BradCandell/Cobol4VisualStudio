@@ -48,10 +48,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="AcceptAndDisplay.cbl" />
     <None Include="AcceptNumber.cbl" />
     <None Include="App.config" />
     <None Include="HelloWorld.cbl" />
+    <None Include="Multiplier.cbl" />
     <None Include="Salesperson.cbl" />
+    <None Include="SequentialWrite.cbl" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

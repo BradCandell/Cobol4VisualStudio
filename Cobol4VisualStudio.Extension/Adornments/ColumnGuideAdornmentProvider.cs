@@ -10,6 +10,9 @@ using Microsoft.VisualStudio.Utilities;
 
 namespace Cobol4VisualStudio.Extension.Adornments {
 
+    /// <summary>
+    /// Adornment Provider - Column Guides
+    /// </summary>
     [Export(typeof(IWpfTextViewCreationListener))]
     [ContentType("Cobol")]
     [TextViewRole(PredefinedTextViewRoles.Interactive)]
@@ -26,8 +29,12 @@ namespace Cobol4VisualStudio.Extension.Adornments {
         private double columnWidth;
 
 
-
+        /// <summary>
+        /// Event - Text View Created 
+        /// </summary>
+        /// <param name="textView">Text View</param>
         public void TextViewCreated(IWpfTextView textView) {
+
             view = textView;
             view.LayoutChanged += View_LayoutChanged;
             view.Closed += View_Closed;
@@ -36,16 +43,27 @@ namespace Cobol4VisualStudio.Extension.Adornments {
 
         }
 
+        /// <summary>
+        /// Event - View Closed
+        /// </summary>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">Event Arguments</param>
         private void View_Closed(object sender, EventArgs e) {
             view.LayoutChanged -= View_LayoutChanged;
             view.Closed -= View_Closed;
         }
 
+        /// <summary>
+        /// View - Layout Changed
+        /// </summary>
+        /// <param name="sender">Sender</param>
+        /// <param name="e">Event Arguments</param>
         private void View_LayoutChanged(object sender, TextViewLayoutChangedEventArgs e) {
 
             bool shouldUpdatePositions = false;
 
             IFormattedLineSource lineSource = view.FormattedLineSource;
+
             if (lineSource == null) {
                 return;
             }
@@ -73,7 +91,9 @@ namespace Cobol4VisualStudio.Extension.Adornments {
 
         }
 
-
+        /// <summary>
+        /// Update the Positions of the Column Guidelines
+        /// </summary>
         private void UpdatePositions() {
 
             foreach (Line line in guidelines) {
@@ -86,6 +106,9 @@ namespace Cobol4VisualStudio.Extension.Adornments {
 
         }
 
+        /// <summary>
+        /// Add the Column Guidelines to the Adornment Layer
+        /// </summary>
         private void AddGuidelinesToAdornmentLayer() {
 
             IAdornmentLayer adornmentLayer = view.GetAdornmentLayer("CobolColumnGuideAdornment");
@@ -102,17 +125,26 @@ namespace Cobol4VisualStudio.Extension.Adornments {
 
         }
 
+        /// <summary>
+        /// Create the Column Guidelines
+        /// </summary>
+        /// <returns>Collection of Cobol Column Guideline Shapes</returns>
         private static List<Line> CreateGuidelines() {
 
             List<Line> results = new List<Line>();
-            results.Add(CreateDefaultGuideline(6));
-            results.Add(CreateDefaultGuideline(7));
-            results.Add(CreateDefaultGuideline(72));
+            results.Add(CreateDefaultGuideline(6));         
+            results.Add(CreateDefaultGuideline(7));         
+            results.Add(CreateDefaultGuideline(72));        
 
             return results;
 
         }
 
+        /// <summary>
+        /// Create the Default Column Guideline
+        /// </summary>
+        /// <param name="column">The text column</param>
+        /// <returns>Default Cobol Column Guideline Shape</returns>
         private static Line CreateDefaultGuideline(int column) {
 
             Line guide = new Line() {
