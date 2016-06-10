@@ -13,7 +13,7 @@ namespace Cobol4VisualStudio.Extension.Classification {
     [ClassificationType(ClassificationTypeNames = "cobolDivision")]
     [Name("cobolDivision")]
     [UserVisible(true)]
-    [Order(After = Priority.High)]
+    [Order(After = Priority.Default, Before = Priority.High)]
     internal sealed class CobolDivisionFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>

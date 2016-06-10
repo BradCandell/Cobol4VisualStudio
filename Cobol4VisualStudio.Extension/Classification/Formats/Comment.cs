@@ -12,7 +12,7 @@ namespace Cobol4VisualStudio.Extension.Classification {
     [ClassificationType(ClassificationTypeNames = "cobolComment")]
     [Name("cobolComment")]
     [UserVisible(true)]
-    [Order(Before = Priority.Default)]
+    [Order(After = Priority.High)]
     internal sealed class CobolCommentFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>

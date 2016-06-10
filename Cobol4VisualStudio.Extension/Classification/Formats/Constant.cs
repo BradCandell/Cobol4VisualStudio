@@ -13,7 +13,7 @@ namespace Cobol4VisualStudio.Extension.Classification {
     [ClassificationType(ClassificationTypeNames = "cobolConstant")]
     [Name("cobolConstant")]
     [UserVisible(true)]
-    [Order(Before = Priority.Default)]
+    [Order(After = Priority.Default, Before = Priority.High)]
     internal sealed class CobolConstantFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
