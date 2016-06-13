@@ -2,6 +2,8 @@
 
 - [ ] Syntax Highlighting
     - [ ] Comments
+      - [ ] Characters
+      - [ ] Position
     - [ ] Constants
     - [ ] Divisions
     - [ ] Identifiers
@@ -33,8 +35,13 @@
 - [ ] Debugging (Local & Remote)
 - [ ] Unit Testing
 - [ ] Build
-- [ ] Project Template
+- [ ] Project & Solution Templates
 - [ ] Snippets
 
+
+## Miscellaneous
+- [ ] Automatically insert **Line Sequence Numbers** after pressing **Enter**
+- [ ] Smart Indentation
+- [ ] Generate Syntax Errors
 
 
