@@ -71,9 +71,6 @@
     <Compile Include="Classification\Types\Picture.cs" />
     <Compile Include="Classification\Types\String.cs" />
     <Compile Include="Classification\Types\Variable.cs" />
-    <Compile Include="Outlining\DivisionOutliningTagger.cs" />
-    <Compile Include="Outlining\PartialRegion.cs" />
-    <Compile Include="Outlining\Region.cs" />
     <Compile Include="Tagging\CobolTokenTag.cs" />
     <Compile Include="Tagging\CobolTokenTagger.cs" />
     <Compile Include="Tagging\CobolTokenTaggerProvider.cs" />
@@ -109,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Intellisense\" />
+    <Folder Include="Outlining\" />
     <Folder Include="Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
