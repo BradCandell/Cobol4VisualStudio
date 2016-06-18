@@ -24,7 +24,10 @@
     - [ ] Conditional Statements
     - [ ] Multi-line Comments
 - [ ] Intellisense
-- [ ] Code Tree Tool Window (with Navigation)
+- [ ] Windows
+    - [ ] Code Tree Tool Window (with Navigation)
+    - [ ] Picture/Record Definitions
+    - [ ] Referenced External Files
 - [ ] Options
     - [ ] Column Guide Settings
     - [ ] COBOL Flavor 
@@ -33,10 +36,10 @@
     - [ ] Copybooks
     - [ ] CALLs
 - [ ] Debugging (Local & Remote)
-- [ ] Unit Testing
 - [ ] Build
 - [ ] Project & Solution Templates
 - [ ] Snippets
+- [ ] Unit Testing
 
 
 ## Miscellaneous
