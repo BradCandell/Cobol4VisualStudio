@@ -40,6 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Language\Divisions.cs" />
+    <Compile Include="Language\IGrammar.cs" />
+    <Compile Include="Language\ILexer.cs" />
+    <Compile Include="Language\Token.cs" />
+    <Compile Include="Language\TokenDefinition.cs" />
+    <Compile Include="Language\TokenPosition.cs" />
+    <Compile Include="Language\TokenSpan.cs" />
+    <Compile Include="Language\TokenTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
