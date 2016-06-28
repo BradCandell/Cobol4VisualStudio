@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
     /// Internal - Cobol Classification Types
@@ -10,11 +10,11 @@ namespace Cobol4VisualStudio.Extension.Classification {
     internal static partial class CobolClassificationTypes {
 
         /// <summary>
-        /// Classification Type Definition - Cobol Paragraph
+        /// Classification Type Definition - Keyword
         /// </summary>
         [Export(typeof(ClassificationTypeDefinition))]
-        [Name("cobolParagraph")]
-        internal static ClassificationTypeDefinition cobolParagraph = null;
+        [Name("CobolKeyword")]
+        internal static ClassificationTypeDefinition cobolKeyword = null;
 
 
     }

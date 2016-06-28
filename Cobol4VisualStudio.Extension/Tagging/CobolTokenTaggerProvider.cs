@@ -9,7 +9,7 @@ namespace Cobol4VisualStudio.Extension {
     /// Cobol Token Tagger Provider
     /// </summary>
     [Export(typeof(ITaggerProvider))]
-    [ContentType("Cobol")]
+    [ContentType("CobolOld")]
     [TagType(typeof(CobolTokenTag))]
     public class CobolTokenTaggerProvider : ITaggerProvider {
 

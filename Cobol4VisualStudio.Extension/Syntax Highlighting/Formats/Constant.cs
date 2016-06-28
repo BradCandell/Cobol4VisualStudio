@@ -3,17 +3,16 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
-
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
-    /// Classification Format Definition - Cobol Constant
+    /// Classification Format Definition - Constant
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolConstant")]
-    [Name("cobolConstant")]
+    [ClassificationType(ClassificationTypeNames = "CobolConstant")]
+    [Name("CobolConstant")]
     [UserVisible(true)]
-    [Order(After = Priority.Default, Before = Priority.High)]
+    [Order(After = Priority.High)]
     internal sealed class CobolConstantFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
@@ -25,7 +24,5 @@ namespace Cobol4VisualStudio.Extension.Classification {
         }
 
     }
-
-
 
 }

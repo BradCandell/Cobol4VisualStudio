@@ -3,14 +3,14 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
-    /// Classification Format Definition - Cobol String
+    /// Classification Format Definition - String
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolString")]
-    [Name("cobolString")]
+    [ClassificationType(ClassificationTypeNames = "CobolString")]
+    [Name("CobolString")]
     [UserVisible(true)]
     [Order(Before = Priority.Default)]
     internal sealed class CobolStringFormatDefinition : ClassificationFormatDefinition {

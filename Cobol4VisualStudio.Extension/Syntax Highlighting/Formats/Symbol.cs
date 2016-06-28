@@ -3,29 +3,27 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
-
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
-    /// Classification Format Definition - Cobol Number
+    /// Classification Format Definition - Symbol
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolNumber")]
-    [Name("cobolNumber")]
+    [ClassificationType(ClassificationTypeNames = "CobolSymbol")]
+    [Name("CobolSymbol")]
     [UserVisible(true)]
     [Order(Before = Priority.Default)]
-    internal sealed class CobolNumberFormatDefinition : ClassificationFormatDefinition {
+    internal sealed class CobolSymbolFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
         /// Default Constructor
         /// </summary>
-        public CobolNumberFormatDefinition() {
-            DisplayName = "Cobol - Number";
+        public CobolSymbolFormatDefinition() {
+            DisplayName = "Cobol - Symbol";
             ForegroundColor = Colors.Black;
         }
 
     }
-
 
 
 }

@@ -3,14 +3,14 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
-    /// Classification Format Definition - Cobol Paragraph
+    /// Classification Format Definition - Paragraph
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolParagraph")]
-    [Name("cobolParagraph")]
+    [ClassificationType(ClassificationTypeNames = "CobolParagraph")]
+    [Name("CobolParagraph")]
     [UserVisible(true)]
     [Order(Before = Priority.Default)]
     internal sealed class CobolParagraphFormatDefinition : ClassificationFormatDefinition {

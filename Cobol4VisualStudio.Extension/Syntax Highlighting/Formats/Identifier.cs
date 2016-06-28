@@ -3,15 +3,15 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
+namespace Cobol4VisualStudio.Extension {
 
 
     /// <summary>
-    /// Classification Format Definition - Cobol Identifier
+    /// Classification Format Definition - Identifier
     /// </summary>
     [Export(typeof(EditorFormatDefinition))]
-    [ClassificationType(ClassificationTypeNames = "cobolIdentifier")]
-    [Name("cobolIdentifier")]
+    [ClassificationType(ClassificationTypeNames = "CobolIdentifier")]
+    [Name("CobolIdentifier")]
     [UserVisible(true)]
     [Order(Before = Priority.Low)]
     internal sealed class CobolIdentifierFormatDefinition : ClassificationFormatDefinition {

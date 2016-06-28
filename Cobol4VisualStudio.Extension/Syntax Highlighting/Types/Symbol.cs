@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
 
-namespace Cobol4VisualStudio.Extension.Classification {
+namespace Cobol4VisualStudio.Extension {
 
     /// <summary>
     /// Internal - Cobol Classification Types
@@ -10,11 +10,11 @@ namespace Cobol4VisualStudio.Extension.Classification {
     internal static partial class CobolClassificationTypes {
 
         /// <summary>
-        /// Classification Type Definition - Cobol String
+        /// Classification Type Definition - Symbol
         /// </summary>
         [Export(typeof(ClassificationTypeDefinition))]
-        [Name("cobolString")]
-        internal static ClassificationTypeDefinition cobolString = null;
+        [Name("CobolSymbol")]
+        internal static ClassificationTypeDefinition cobolSymbol = null;
 
 
     }
