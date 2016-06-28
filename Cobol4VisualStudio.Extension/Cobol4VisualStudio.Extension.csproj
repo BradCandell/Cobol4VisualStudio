@@ -44,6 +44,13 @@
     <Compile Include="Adornments\ColumnGuideAdornment.cs" />
     <Compile Include="Adornments\ColumnGuideAdornmentProvider.cs" />
     <Compile Include="Classification.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxClassifier.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxClassifierProvider.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxDefinition.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxHighlighter.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxHighlighterProvider.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxTag.cs" />
+    <Compile Include="Syntax Highlighting\CobolSyntaxTypes.cs" />
     <Compile Include="Syntax Highlighting\Formats\Comment.cs" />
     <Compile Include="Syntax Highlighting\Formats\Constant.cs" />
     <Compile Include="Syntax Highlighting\Formats\Division.cs" />
