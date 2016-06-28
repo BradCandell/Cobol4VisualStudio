@@ -43,8 +43,7 @@
   <ItemGroup>
     <Compile Include="Adornments\ColumnGuideAdornment.cs" />
     <Compile Include="Adornments\ColumnGuideAdornmentProvider.cs" />
-    <Compile Include="Classification\CobolClassifier.cs" />
-    <Compile Include="Classification\CobolClassifierProvider.cs" />
+    <Compile Include="Classification.cs" />
     <Compile Include="Syntax Highlighting\Formats\Comment.cs" />
     <Compile Include="Syntax Highlighting\Formats\Constant.cs" />
     <Compile Include="Syntax Highlighting\Formats\Division.cs" />
@@ -71,11 +70,7 @@
     <Compile Include="Syntax Highlighting\Types\SequenceNumber.cs" />
     <Compile Include="Syntax Highlighting\Types\String.cs" />
     <Compile Include="Syntax Highlighting\Types\Symbol.cs" />
-    <Compile Include="Tagging\CobolTokenTag.cs" />
-    <Compile Include="Tagging\CobolTokenTagger.cs" />
-    <Compile Include="Tagging\CobolTokenTaggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tagging\CobolTokenTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
