@@ -38,7 +38,6 @@ namespace Cobol4VisualStudio.Extension.Adornments {
             view = textView;
             view.LayoutChanged += View_LayoutChanged;
             view.Closed += View_Closed;
-
             guidelines = CreateGuidelines();
 
         }
@@ -82,6 +81,11 @@ namespace Cobol4VisualStudio.Extension.Adornments {
                 e.NewViewState.ViewportTop != e.OldViewState.ViewportTop ||
                 e.NewViewState.ViewportBottom != e.OldViewState.ViewportBottom) {
                 UpdatePositions();
+            }
+
+            IAdornmentLayer adornmentLayer = view.GetAdornmentLayer("CobolColumnGuideAdornment");
+            if(adornmentLayer != null && adornmentLayer.Elements.Count == 0) {
+                isFirstLayoutDone = false;
             }
 
             if (!isFirstLayoutDone) {
@@ -133,7 +137,8 @@ namespace Cobol4VisualStudio.Extension.Adornments {
 
             List<Line> results = new List<Line>();
             results.Add(CreateDefaultGuideline(6));         
-            results.Add(CreateDefaultGuideline(7));         
+            results.Add(CreateDefaultGuideline(7));
+            results.Add(CreateDefaultGuideline(11));
             results.Add(CreateDefaultGuideline(72));        
 
             return results;

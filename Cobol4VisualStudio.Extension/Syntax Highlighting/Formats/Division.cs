@@ -12,7 +12,7 @@ namespace Cobol4VisualStudio.Extension {
     [ClassificationType(ClassificationTypeNames = "CobolDivision")]
     [Name("CobolDivision")]
     [UserVisible(true)]
-    [Order(After = Priority.High)]
+    [Order(After = Priority.Default)]
     internal sealed class CobolDivisionFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Cobol4VisualStudio.Extension {
     [ClassificationType(ClassificationTypeNames = "CobolDivisionName")]
     [Name("CobolDivisionName")]
     [UserVisible(true)]
-    [Order(After = Priority.High)]
+    [Order(After = Priority.Default)]
     internal sealed class CobolDivisionNameFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>

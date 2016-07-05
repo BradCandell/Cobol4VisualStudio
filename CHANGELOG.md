@@ -1,20 +1,20 @@
 # Roadmap
 
 - [ ] Syntax Highlighting
-    - [ ] Comments
-      - [ ] Characters
+    - [X] Comments
+      - [X] Characters
       - [ ] Position
-    - [ ] Constants
-    - [ ] Divisions
+    - [X] Constants
+    - [X] Divisions
     - [ ] Identifiers
     - [ ] Keywords / Reserved Words
-    - [ ] Sequence (Line) Numbers
+    - [X] Sequence (Line) Numbers
     - [ ] Numbers
     - [ ] Operators
     - [ ] Paragraphs
     - [ ] Picture Clauses
-    - [ ] Sections
-    - [ ] Strings
+    - [X] Sections
+    - [X] Strings
     - [ ] Record Definitions
 - [x] Adornments (Column Guides)
 - [ ] Collapsing
