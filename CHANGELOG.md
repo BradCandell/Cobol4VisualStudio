@@ -7,11 +7,11 @@
     - [X] Constants
     - [X] Divisions
     - [ ] Identifiers
-    - [ ] Keywords / Reserved Words
+    - [X] Keywords / Reserved Words
     - [X] Sequence (Line) Numbers
-    - [ ] Numbers
+    - [X] Numbers
     - [ ] Operators
-    - [ ] Paragraphs
+    - [X] Paragraphs
     - [ ] Picture Clauses
     - [X] Sections
     - [X] Strings
