@@ -25,5 +25,17 @@ namespace Cobol4VisualStudio.Extension {
 
     }
 
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "CobolPictureLevel")]
+    [Name("CobolPictureLevel")]
+    [UserVisible(true)]
+    [Order(Before = Priority.Default)]
+    internal sealed class CobolPictureLevelFormatDefinition: ClassificationFormatDefinition {
+
+        public CobolPictureLevelFormatDefinition() {
+            DisplayName = "Cobol - Picture Level";
+            ForegroundColor = Color.FromRgb(0x99, 0x4c, 0x00);
+        }
+    }
 
 }

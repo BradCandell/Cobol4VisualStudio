@@ -16,8 +16,8 @@ namespace Cobol4VisualStudio.Extension {
 
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Comment, Expression = new Regex(@"(\*.*)") },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.SequenceNumber, Expression = new Regex(@"^[\d]{6}") },
-            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Division, Expression = new Regex(@"(?<=(IDENTIFICATION|ID|ENVIRONMENT|DATA|PROCEDURE))[\s]+DIVISION(?=\.)", RegexOptions.IgnoreCase) },
-            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.DivisionName, Expression = new Regex(@"\b(IDENTIFICATION|ID|ENVIRONMENT|DATA|PROCEDURE)(?=[\s]+DIVISION\.)", RegexOptions.IgnoreCase) },
+            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Division, Expression = new Regex(@"(?<=(IDENTIFICATION|ID|ENVIRONMENT|DATA|PROCEDURE))[\s]+DIVISION(?=(\.|[\s]??(USING|GIVING|RETURNING)))", RegexOptions.IgnoreCase) },
+            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.DivisionName, Expression = new Regex(@"\b(IDENTIFICATION|ID|ENVIRONMENT|DATA|PROCEDURE)(?=[\s]+DIVISION(\.|[\s]??(USING|GIVING|RETURNING)))", RegexOptions.IgnoreCase) },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Section, Expression = new Regex(@"(?<=[\w\d-]{1,32}[\s]+)SECTION(?=\.)", RegexOptions.IgnoreCase) },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.SectionName, Expression = new Regex(@"\b([A-Za-z0-9-]+)(?=[\s]+SECTION\.)", RegexOptions.IgnoreCase) },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Constant, Expression = new Regex(@"\b(?<![-])(FILLER|HIGH-VALUE[S]??|LOW-VALUE[S]??NULL[S]??|QUOTE[S]??|SPACE[S]??|ZERO(ES|S)??)\b(?!-)", RegexOptions.IgnoreCase) },
@@ -26,6 +26,8 @@ namespace Cobol4VisualStudio.Extension {
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Paragraph, Expression = new Regex(@"(?<=(^[\d]{6}\s{1,4}))(?<![-])(?=[A-Za-z0-9-]*?[A-Z])(?<![-])\b[A-Za-z0-9-]{1,30}\b(?!-)(?=\.)", RegexOptions.IgnoreCase) },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Number, Expression = new Regex(@"(?<=[ ]+?)[\d]*[.]*[\d]*(?=[ \r\n]+?)") }, 
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Identifier, Expression = new Regex(@"\b(?<![-])(?=[A-Za-z0-9-]*?[A-Z])(?<![-])\b[A-Za-z0-9-]{1,30}\b(?!-)") },
+            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.PictureLevel, Expression = new Regex(@"(?<=(^[\d]{6}\s{1,}))[\d]{1,2}(?=\s.*)") },
+            
             //// Operator
             //// Picture
             //// Symbol

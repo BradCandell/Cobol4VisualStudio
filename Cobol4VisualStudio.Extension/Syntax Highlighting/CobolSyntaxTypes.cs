@@ -12,6 +12,7 @@
         Operator,
         Paragraph,
         Picture,
+        PictureLevel,
         Section,
         SectionName,
         SequenceNumber,

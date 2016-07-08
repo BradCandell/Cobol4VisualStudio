@@ -28,6 +28,7 @@ namespace Cobol4VisualStudio.Extension {
                 { CobolSyntaxTypes.Operator, typeService.GetClassificationType("CobolOperator") },
                 { CobolSyntaxTypes.Paragraph, typeService.GetClassificationType("CobolParagraph") },
                 { CobolSyntaxTypes.Picture, typeService.GetClassificationType("CobolPicture") },
+                { CobolSyntaxTypes.PictureLevel, typeService.GetClassificationType("CobolPictureLevel") },
                 { CobolSyntaxTypes.Section, typeService.GetClassificationType("CobolSection") },
                 { CobolSyntaxTypes.SectionName, typeService.GetClassificationType("CobolSectionName") },
                 { CobolSyntaxTypes.SequenceNumber, typeService.GetClassificationType("CobolSequenceNumber") },

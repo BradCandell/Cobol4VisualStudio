@@ -16,6 +16,12 @@ namespace Cobol4VisualStudio.Extension {
         [Name("CobolPicture")]
         internal static ClassificationTypeDefinition cobolPicture = null;
 
+        /// <summary>
+        /// Classification Type Definition - Picture Clause Level
+        /// </summary>
+        [Export(typeof(ClassificationTypeDefinition))]
+        [Name("CobolPictureLevel")]
+        internal static ClassificationTypeDefinition cobolPictureLevel = null;
 
     }
 
