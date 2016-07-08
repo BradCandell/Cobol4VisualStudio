@@ -20,7 +20,6 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolOperatorFormatDefinition() {
             DisplayName = "Cobol - Operator";
-            ForegroundColor = Colors.Aqua;
         }
 
     }

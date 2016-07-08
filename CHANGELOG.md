@@ -6,7 +6,7 @@
       - [ ] Position
     - [X] Constants
     - [X] Divisions
-    - [ ] Identifiers
+    - [X] Identifiers
     - [X] Keywords / Reserved Words
     - [X] Sequence (Line) Numbers
     - [X] Numbers
@@ -46,5 +46,6 @@
 - [ ] Automatically insert **Line Sequence Numbers** after pressing **Enter**
 - [ ] Smart Indentation
 - [ ] Generate Syntax Errors
+- [ ] Show/Hide Comments
 
 

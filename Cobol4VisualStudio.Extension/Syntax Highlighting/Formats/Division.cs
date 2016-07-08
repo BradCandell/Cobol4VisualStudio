@@ -20,7 +20,7 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolDivisionFormatDefinition() {
             DisplayName = "Cobol - Division";
-            ForegroundColor = Colors.Purple;
+            ForegroundColor = Color.FromRgb(0x66, 0x00, 0x66);
             IsBold = true;
         }
 
@@ -43,7 +43,7 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolDivisionNameFormatDefinition() {
             DisplayName = "Cobol - Division (Name)";
-            ForegroundColor = Colors.Purple;
+            ForegroundColor = Color.FromRgb(0x66, 0x00, 0x66);
             IsBold = true;
         }
 

@@ -21,7 +21,7 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolSectionFormatDefinition() {
             DisplayName = "Cobol - Section";
-            ForegroundColor = Color.FromRgb(0xBA, 0x55, 0xD3);
+            ForegroundColor = Color.FromRgb(0x99, 0x00, 0x99);
             IsBold = true;
         }
 
@@ -44,7 +44,7 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolSectionNameFormatDefinition() {
             DisplayName = "Cobol - Section (Name)";
-            ForegroundColor = Color.FromRgb(0xBA, 0x55, 0xD3);
+            ForegroundColor = Color.FromRgb(0x99, 0x00, 0x99);
             IsBold = true;
         }
 

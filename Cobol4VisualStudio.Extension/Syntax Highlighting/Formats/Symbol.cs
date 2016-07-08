@@ -20,7 +20,6 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolSymbolFormatDefinition() {
             DisplayName = "Cobol - Symbol";
-            ForegroundColor = Colors.Black;
         }
 
     }

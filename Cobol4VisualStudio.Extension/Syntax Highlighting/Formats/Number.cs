@@ -21,7 +21,6 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolNumberFormatDefinition() {
             DisplayName = "Cobol - Number";
-            ForegroundColor = Colors.Black;
         }
 
     }

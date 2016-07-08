@@ -20,7 +20,7 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolParagraphFormatDefinition() {
             DisplayName = "Cobol - Paragraph";
-            ForegroundColor = Colors.DarkMagenta;
+            ForegroundColor = Color.FromRgb(0xCC, 0x00, 0xCC);
         }
 
     }
