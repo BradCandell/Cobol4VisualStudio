@@ -44,6 +44,9 @@
     <Compile Include="Adornments\ColumnGuideAdornment.cs" />
     <Compile Include="Adornments\ColumnGuideAdornmentProvider.cs" />
     <Compile Include="Classification.cs" />
+    <Compile Include="Outlining\CobolOutliningRegion.cs" />
+    <Compile Include="Outlining\CobolOutliningTagger.cs" />
+    <Compile Include="Outlining\CobolOutliningTaggerProvider.cs" />
     <Compile Include="Syntax Highlighting\CobolSyntaxClassifier.cs" />
     <Compile Include="Syntax Highlighting\CobolSyntaxClassifierProvider.cs" />
     <Compile Include="Syntax Highlighting\CobolSyntaxDefinition.cs" />
@@ -108,7 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Intellisense\" />
-    <Folder Include="Outlining\" />
     <Folder Include="Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

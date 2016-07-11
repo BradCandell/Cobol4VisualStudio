@@ -20,9 +20,9 @@
     - [ ] Record Definitions
 - [x] Adornments (Column Guides)
 - [ ] Collapsing
-    - [ ] Divisions
-    - [ ] Sections
-    - [ ] Paragraphs
+    - [X] Divisions
+    - [X] Sections
+    - [X] Paragraphs
     - [ ] Conditional Statements
     - [ ] Multi-line Comments
 - [ ] Intellisense
