@@ -21,7 +21,6 @@ namespace Cobol4VisualStudio.Extension {
         /// </summary>
         public CobolIdentifierFormatDefinition() {
             DisplayName = "Cobol - Identifier";
-            ForegroundColor = Color.FromRgb(0x43, 0x91, 0xAF);
         }
 
     }
