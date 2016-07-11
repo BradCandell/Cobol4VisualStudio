@@ -12,13 +12,14 @@ namespace Cobol4VisualStudio.Extension {
     [ClassificationType(ClassificationTypeNames = "CobolSymbol")]
     [Name("CobolSymbol")]
     [UserVisible(true)]
-    [Order(Before = Priority.Default)]
+    [Order(Before = Priority.High)]
     internal sealed class CobolSymbolFormatDefinition : ClassificationFormatDefinition {
 
         /// <summary>
         /// Default Constructor
         /// </summary>
         public CobolSymbolFormatDefinition() {
+            ForegroundColor = Colors.Black;
             DisplayName = "Cobol - Symbol";
         }
 

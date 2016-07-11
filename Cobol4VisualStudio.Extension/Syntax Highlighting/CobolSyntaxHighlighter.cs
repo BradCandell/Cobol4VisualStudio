@@ -27,11 +27,9 @@ namespace Cobol4VisualStudio.Extension {
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Number, Expression = new Regex(@"(?<=[ ]+?)[\d]*[.]*[\d]*(?=[ \r\n]+?)") }, 
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Identifier, Expression = new Regex(@"\b(?<![-])(?=[A-Za-z0-9-]*?[A-Z])(?<![-])\b[A-Za-z0-9-]{1,30}\b(?!-)") },
             new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.PictureLevel, Expression = new Regex(@"(?<=(^[\d]{6}\s{1,}))[\d]{1,2}(?=\s.*)") },
+            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Picture, Expression = new Regex(@"(picture\s+is|picture|pic\s+is|pic)\s+[ABPSVXZ(),/$-.+*0-9]*(CR|DB|CS|)", RegexOptions.IgnoreCase) },
+            new CobolSyntaxDefinition() { Type = CobolSyntaxTypes.Symbol, Expression = new Regex(@"(?<=picture\s+is|picture|pic\s+is|pic\s+.*)[().]*", RegexOptions.IgnoreCase) },
             
-            //// Operator
-            //// Picture
-            //// Symbol
-
         };
 
 

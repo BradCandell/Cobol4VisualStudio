@@ -12,9 +12,9 @@
     - [X] Numbers
     - [ ] Operators
     - [X] Paragraphs
-    - [ ] Picture Clauses
+    - [X] Picture Clauses
       - [X] Level
-      - [ ] Definition
+      - [X] Definition
     - [X] Sections
     - [X] Strings
     - [ ] Record Definitions
